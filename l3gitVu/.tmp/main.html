@@ -1,0 +1,39 @@
+<head>
+    <title>Gun Stalker</title>
+</head>
+
+<body>
+
+<div class="container"
+     ng-app="gunStalker"
+     ng-controller="StalkController">
+
+    <header>
+        <h1>Gun Stalker</h1>
+        <button class="info-button" ng-click="infoModal()"><span class="pawIcon"><i class="fa fa-paw"></i></span></button>
+    </header>
+
+    <div class="logo">
+        <img class="stalker-logo" ng-src="https://s3-us-west-2.amazonaws.com/gunstalker/img/cute-baby-wolf.png"/>
+    </div>
+
+    <div class="box">
+        <div class="stalk-container">
+            <form name="stalkForm" ng-submit="performStalk(stalkVal)" novalidate>
+                <span class="icon"><i class="fa fa-search fa-2x"></i></span>
+                <input type="text" ng-model="stalkVal" name="stalkValue" id="stalk" placeholder="Stalk..." />
+            </form>
+        </div>
+    </div>
+
+    <button class="test-button" ng-click="performStalk('button pressed')"><span class="pawIcon"><i class="fa fa-paw"></i></span>performStalk()</button>
+
+    <ul>
+        <li ng-repeat="x in names">
+            {{ x }}
+        </li>
+    </ul>
+
+</div>
+
+</body>

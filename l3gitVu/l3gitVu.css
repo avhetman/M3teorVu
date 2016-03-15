@@ -1,0 +1,129 @@
+/* CSS */
+@import url(https://fonts.googleapis.com/css?family=Orbitron);
+
+/* Body*/
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #1d404f;
+    background: radial-gradient(ellipse at center, #1d404f 11%, #000000 88%);
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+/* END Body*/
+
+/* Header */
+header {
+    background-color: rgba(17, 30, 39, 0.80);
+    padding: 20px 15px 15px 15px;
+    position: relative;
+}
+h1.splash-logo {
+    font-size: 3.5em;
+    margin: 0;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 1em;
+    color: #ffffff;
+}
+h1.header-logo {
+    font-size: 1.5em;
+    margin: 0;
+    margin-bottom: 10px;
+    display: inline-block;
+    margin-right: 1em;
+    color: #ffffff;
+}
+.info-button {
+    float: right;
+    border: 1px solid;
+    border-radius: 100px;
+    -webkit-transition: background .55s ease;
+    -moz-transition: background .55s ease;
+    -ms-transition: background .55s ease;
+    -o-transition: background .55s ease;
+    transition: background .55s ease;
+}
+.info-button:hover {
+    background: rgba(17, 30, 39, 0.35);
+}
+.info-button .infoIcon {
+    color: #4f5b66;
+}
+.l3-logo{
+    padding-top: 15px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+/* END Header*/
+
+/*Search Form Main Styling */
+.container {
+    max-width: 900px;
+    min-width: 420px;
+    margin: 0 auto;
+    min-height: 100%;
+    background: #202629;
+}
+.box{
+    margin: 10px 25px;
+    width: 500px;
+    height: 50px;
+    padding-left: 10px;
+}
+.search-container input#search{
+    width: 500px;
+    height: 50px;
+    background: #373e44;
+    border: none;
+    font-size: 1.5em;
+    float: left;
+    color: white;
+    padding-left: 50px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-transition: background .55s ease;
+    -moz-transition: background .55s ease;
+    -ms-transition: background .55s ease;
+    -o-transition: background .55s ease;
+    transition: background .55s ease;
+}
+.search-container input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+
+.search-container input#search:-moz-placeholder { /* Firefox 18- */
+    color: #65737e;
+}
+
+.search-container input#search::-moz-placeholder {  /* Firefox 19+ */
+    color: #65737e;
+}
+
+.search-container input#search:-ms-input-placeholder {
+    color: #65737e;
+}
+.search-container input#search:hover, .search-container input#search:focus, .search-container input#search:active{
+    outline:none;
+    background: rgba(17, 30, 39, 0.35);
+}
+.search-container .icon{
+    position: absolute;
+    margin-left: 12px;
+    margin-top: 12px;
+    color: #4f5b66;
+}
+input, select, textarea, button{font-family:inherit;}
+
+/*END Search Form Main*/

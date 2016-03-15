@@ -1,0 +1,39 @@
+<head>
+    <base href="/">
+    <title>M3teorVu</title>
+    <link rel="icon" sizes="16x16 32x32 48x48" href="/images/favicons/favicon.ico">
+</head>
+
+<body ng-app="l3gitVu">
+    <div  ng-strict-di="" ng-controller="MainController" class="container">
+
+        <header ng-controller="HeaderCtrl">
+            <a href="/search"><h1 class="header-logo">M<span style="color: red">3</span>teor<span style="color: red">(</span>Vu<span style="color: red">)</span></h1></a>
+            <button class="info-button" ng-click="infoModal()"><span class="infoIcon"><i class="fa fa-info"></i></span></button>
+
+            <!--<a href="partials/accounts.html"><button class="info-button" ng-click=""><span class="infoIcon">Accounts</span></button></a>-->
+            <!--<a href="partials/account.html"><button class="info-button" ng-click=""><span class="infoIcon">Account</span></button></a>-->
+        </header>
+
+        <div class="l3-logo">
+            <h1 class="splash-logo">M<span style="color: red">3</span>teor<span style="color: red">(</span>Vu<span style="color: red">)</span></h1>
+        </div>
+
+        <div class="box">
+            <div class="search-container">
+                <form name="searchForm" ng-submit="submitQuery()" novalidate>
+                    <span class="icon"><i class="fa fa-search fa-2x"></i></span>
+                    <input type="text" ng-model="data.query" id="search" placeholder="Search iTunes..." ng-change="updateQuery()"/>
+                </form>
+            </div>
+        </div>
+
+        <div>
+            {{data.searchData}}
+        </div>
+
+        <!--<div ui-view=""></div>-->
+
+    </div>
+</body>
+
